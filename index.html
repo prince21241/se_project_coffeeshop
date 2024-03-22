@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop</title>
     <meta name="description" content="Best Coffee in The Town" />
     <meta name="keywords" content="Hot,Ready,Tasty" />
     <meta name="author" content="Prince Raval" />
     <meta name="keywords" content="HTML, CSS" />
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,8 +19,21 @@
   </head>
   <body>
     <div class="page">
-      <p>Coffee Shop</p>
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="coffe shop logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#recipes-bar-link">Recipes</a></li>
+            <li><a class="nav__link" href="#book-bar-link">Book a table</a></li>
+            <li><a class="nav__link" href="#menu-bar-link">Menu</a></li>
+            <li><a class="nav__link" href="#contacts-bar-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
       <main class="content">
         <section class="recipes"></section>
         <section class="reservation"></section>
