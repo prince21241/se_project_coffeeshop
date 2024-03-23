@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Best Coffee in The Town" />
-    <meta name="keywords" content="Hot,Ready,Tasty" />
-    <meta name="author" content="Prince Raval" />
-    <meta name="keywords" content="HTML, CSS" />
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <meta name="author" content="Tim Hemsworth" />
+    <meta
+      name="description"
+      content="Learn more about the newest coffee shop in town"
+    />
+    <meta name="keywords" content="coffee, coffeeshop, tripleten" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,39 +16,79 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <title>The Triple Ten Coffee Shop</title>
   </head>
   <body>
     <div class="page">
-      <header class="header">
+      <header class="header" id="header-id">
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
-            alt="coffe shop logo"
+            alt="Coffeeshop logo"
             class="nav__logo"
           />
           <ul class="nav__links">
-            <li><a class="nav__link" href="#recipes-bar-link">Recipes</a></li>
-            <li><a class="nav__link" href="#book-bar-link">Book a table</a></li>
-            <li><a class="nav__link" href="#menu-bar-link">Menu</a></li>
-            <li><a class="nav__link" href="#contacts-bar-link">Contacts</a></li>
+            <li><a href="#recipes-id" class="nav__link">Recipes</a></li>
+            <li>
+              <a href="#reservation-id" class="nav__link">Book a table</a>
+            </li>
+            <li><a href="#menu-id" class="nav__link">Menu</a></li>
+            <li><a href="#about-id" class="nav__link">Contacts</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span-accent">Specialty coffee</span> in the
+          <span class="header__span-accent">Speciality Coffee</span>in the
           Triple Peaks Library
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
         </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Inside the coffeeshop"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraphs">Hours:</p>
+            <p class="header__paragraphs">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraphs">Saturday - Sunday (11:00 - 18:00)</p>
+          </div>
+          <p class="header__paragraphs">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
+        </div>
       </header>
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section class="recipes" id="recipes-id">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=Zx7HE7JKPuhV2Dzb"
+                class="recipes__iframe"
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span> ~5min
+              </p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/st571DYYTR8?si=6iKAkVMNisnJWgTJ"
+                class="recipes__iframe"
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>French Press recipe</span> ~5min
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="footer"></footer>
     </div>
   </body>
 </html>
