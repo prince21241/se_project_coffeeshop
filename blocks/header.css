@@ -22,11 +22,12 @@
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.6px;
+  z-index: 1;
 }
 
 .header__description {
   max-width: 683px;
-  font-family: "Noto Serif", Georgia, serif;
+  font-family: "Noto Serif", "New Times Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -37,7 +38,7 @@
 
 .header__span-accent {
   display: block;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "New Times Roman", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
